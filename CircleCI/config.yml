@@ -34,7 +34,7 @@ workflows:
   build:
     jobs:
       - build:
-        #Execute only on the branch 'master'
+        #Execute only on the branch 'master' /
         filters:
           branches:
             only:
