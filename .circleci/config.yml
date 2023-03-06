@@ -1,0 +1,29 @@
+version: 2.1
+
+orbs:
+  codecov: codecov/codecov@3.1.1
+
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/openjdk:11.0
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command : mvn -B -DskipTests clean package
+      - run: echo "On teste le job"
+      - run:
+          name: Test
+          command: mvn test
+      - codecov/upload
+      - run:
+          name: Site
+          command: mvn site
+      - run:
+          name: Post-site
+          command: mvn post-site
+workflows:
+  sample: 
+    jobs:
+    - build-and-test
