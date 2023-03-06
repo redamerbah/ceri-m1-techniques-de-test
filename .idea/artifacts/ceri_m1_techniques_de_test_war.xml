@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="TP1.war">
+    <root id="archive" name="ceri-m1-techniques-de-test.war">
       <element id="artifact" artifact-name="ceri-m1-techniques-de-test:war exploded" />
     </root>
   </artifact>
