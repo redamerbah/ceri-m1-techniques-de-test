@@ -7,10 +7,6 @@
   <groupId>com.reda.tp</groupId>
   <artifactId>ceri-m1-techniques-de-test</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-
-
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -25,12 +21,12 @@
     <version>4.13.2</version>
     <scope>test</scope>
 </dependency>
-
+    <!--
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-collections4</artifactId>
       <version>4.0</version>
-    </dependency>
+    </dependency> -->
 
 <dependency>
     <groupId>org.mockito</groupId>
@@ -38,9 +34,5 @@
     <version>3.9.0</version>
     <scope>test</scope>
 </dependency>
-
-
   </dependencies>
-
-
 </project>
