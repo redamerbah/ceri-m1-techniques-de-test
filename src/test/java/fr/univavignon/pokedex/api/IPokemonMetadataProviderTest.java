@@ -1,15 +1,19 @@
 package fr.univavignon.pokedex.api;
+
+
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 import org.mockito.Mockito;
 
-public interface IPokemonMetadataProviderTest {
+
+public class IPokemonMetadataProviderTest {
     @Test
-    public default void AffichageTest() throws PokedexException {
+    public void AffichageTest() throws PokedexException {
         IPokemonMetadataProvider pokemonMetadataProvider = Mockito.mock(IPokemonMetadataProvider.class);
 
-        int indextest=133;
+
         String name="Aquali";
         int attack=186;
         int defense = 168;
@@ -22,4 +26,5 @@ public interface IPokemonMetadataProviderTest {
         assertEquals(defense, pokemonMetadata.getDefense());
         assertEquals(stamina, pokemonMetadata.getStamina());
     }
+
 }
