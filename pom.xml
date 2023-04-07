@@ -43,28 +43,20 @@
                 <version>0.8.7</version>
                 <executions>
                     <execution>
-                        <id>prepare-integration-tests</id>
-                        <phase>pre-integration-test</phase>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
-                        <configuration>
-                            <destFile>${basedir}/target/jacoco-unit.exec</destFile>
-                        </configuration>
                     </execution>
                     <execution>
-                        <id>jacoco-site</id>
-                        <phase>post-integration-test</phase>
+                        <id>report</id>
+                        <phase>test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
-                        <configuration>
-                            <dataFile>${basedir}/target/jacoco-unit.exec</dataFile>
-                        </configuration>
-
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
 
     </build>
