@@ -19,9 +19,7 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - run:
-          name: javadoc
-          command: mvn javadoc:javadoc
+
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
