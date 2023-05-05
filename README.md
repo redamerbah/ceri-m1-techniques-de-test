@@ -10,7 +10,7 @@
 # badge codecov
 * [![codecov](https://codecov.io/gh/redamerbah/ceri-m1-techniques-de-test/branch/master/graph/badge.svg)](https://app.codecov.io/gh/redamerbah/ceri-m1-techniques-de-test)
 # badge javadoc
-* [![javadoc](https://javadoc.io/badge2/org.springframework/spring-core/javadoc.svg)](https://javadoc.io/doc/org.springframework/spring-core)
+* [![javadoc](https://javadoc.io/badge2/org.springframework/spring-core/javadoc.svg)](https://redamerbah.github.io/ceri-m1-techniques-de-test/)
 # badge checkstyle
 * ![Checkstyle](target/site/badges/checkstyle-result.svg)
 
