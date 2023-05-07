@@ -17,7 +17,8 @@ public class RocketPokemonFactoryTest {
         po1 = new Pokemon(0, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56);
         po2 = new Pokemon(133, "MISSINGNO", 186, 168, 260, 2729, 202, 5000, 4, 100);
         po3 = rocketPokemon.createPokemon(-1, 1, 1, 1, 1);
-
+        po4 = rocketPokemon.createPokemon(1, 1, 1, 1, 1);
+        po5 = rocketPokemon.createPokemon(0, 1, 1, 1, 1);
 
     }
 
@@ -40,18 +41,12 @@ public class RocketPokemonFactoryTest {
         assertEquals(260, po2.getStamina());
         // Test 3
         assertEquals("Ash's Pikachu", po3.getName());
+        // Test 4
+        assertEquals("Bulbasaur", po4.getName());
+        // Test 5
+        assertEquals("MISSINGNO", po5.getName());
 
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }
